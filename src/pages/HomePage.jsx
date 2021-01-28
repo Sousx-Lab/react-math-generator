@@ -29,14 +29,7 @@ function Homepage({ name }) {
     setLocalStorageValue('username', user.username)
     setHidden(false)
   }
-  const caracters = [
-    "nes-mario",
-    "nes-ash",
-    "nes-pokeball",
-    "nes-charmander",
-    "nes-squirtle",
-    "nes-kirby"
-  ];
+  
   return (
     <>
       <div className="nes-container with-title mb-3">
