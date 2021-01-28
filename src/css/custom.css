@@ -1,0 +1,12 @@
+html, body{
+    height: 100%;
+}
+html, body, pre, code, kbd, samp {
+    font-family: 'Press Start 2P', cursive; 
+}
+.container{
+    background-color: rgb(218, 213, 213);
+}
+body{
+    background-color: rgba(5, 5, 5, 0.904);
+}
