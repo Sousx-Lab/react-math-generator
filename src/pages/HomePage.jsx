@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext} from 'react';
 import Field from '../components/Forms/Field';
 import UserContext from '../contexts/UserContext';
 import { setLocalStorageValue } from '../services/getUser';
@@ -38,15 +38,15 @@ function Homepage({ name }) {
           <div className="message-left">
             <i className="nes-kirby"></i>
             <div className="nes-balloon from-left">
-              <p>Bonjour <strong className="nes-text is-error">{!user.username ? name : user.username} </strong> 
-                <i className="nes-icon star is-mediam"></i> et bienvenue sur <strong className="nes-text is-error">ExercicesLand</strong></p>
+              <p>Bonjour <strong  data-testid="username" className="nes-text is-error">{!user.username ? name : user.username} </strong> 
+                <i className="nes-icon star is-mediam"></i> et bienvenue <strong className="nes-text is-error"> :)</strong></p>
             </div>
           </div>
         </div>
         {!hidden && (
           <div className="d-flex justify-content-end mt-3">
             <p className="nes-balloon from-right nes-pointer" >
-            Tu peux changer ton prénom en cliquant <strong className="nes-text is-success" onClick={changeName}>ici</strong>
+            Tu peux changer ton prénom en cliquant <strong id="changeName" className="nes-text is-success" onClick={changeName}>ici</strong>
           </p>
           <i className="nes-kirby"></i>
         </div>
@@ -54,7 +54,7 @@ function Homepage({ name }) {
         {hidden && (
           <form id="form" onSubmit={handleSubmit} >
             <Field
-              type="text" name="username" label="Tu peux ajouter ton prénom ou un pseudo ici. 🔽" value={user.username} onChange={handleChange} placeholder={"Zakaria"} error={""} />
+              type="text" name="username" label="Tu peux ajouter ton prénom ou un pseudo ici. 🔽" value={user.username} onChange={handleChange} placeholder={""} error={""} />
             <button type="submit" className="nes-btn is-success m-2">OK !</button>
             <button type="button" className="nes-btn is-error" onClick={() => setHidden(false)}>Cancel</button>
           </form>
