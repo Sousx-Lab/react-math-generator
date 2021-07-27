@@ -5,26 +5,14 @@ This application allows to do mathematical exercises for children which randomly
 
 ## Installing Dependencies
 
-#### npm
+#### npm or yarn
 
 ```bash
-  npm install my-project
-  cd my-project
-```
-
-#### yarn
-
-```bash
-  yarn install my-project
-  cd my-project
+  yarn install
 ```
 
 ### Start server 
- #### npm
-```bash
-  npm start 
-```
-#### yarn 
+#### npm or yarn
 ```bash
   yarn start
 ```
