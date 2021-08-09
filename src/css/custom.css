@@ -5,7 +5,7 @@ html, body, pre, code, kbd, samp {
     font-family: 'Press Start 2P', cursive; 
 }
 .container{
-    background-color: rgba(132, 177, 230, 0.5);
+    background-color: rgba(132, 177, 230, 0.9);
 }
 body{
     background-image: url(../img/bg.jpg);
